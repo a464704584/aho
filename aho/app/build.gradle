@@ -12,6 +12,13 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+
+        compileOptions {
+            sourceCompatibility = JavaVersion.VERSION_1_8
+            targetCompatibility = JavaVersion.VERSION_1_8
+        }
     }
 
     buildTypes {
@@ -20,6 +27,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
 
 }
 
@@ -31,4 +39,44 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    //butterKnife
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+
+    //design库
+    implementation('com.google.android.material:material:1.0.0')
+
+
+    //图片加载glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'jp.wasabeef:glide-transformations:4.0.0'
+
+
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+
+    //添加lombok依赖
+    implementation 'org.projectlombok:lombok:1.16.8'
+    annotationProcessor "org.projectlombok:lombok:1.16.8"
+    //java注解
+    implementation 'org.glassfish:javax.annotation:10.0-b28'
+
+
 }
