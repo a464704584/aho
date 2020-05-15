@@ -102,6 +102,12 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     }
 
 
+    public ViewHolder setVisibility(int viewId,int visibility){
+        getView(viewId).setVisibility(visibility);
+        return this;
+    }
+
+
 
 
 

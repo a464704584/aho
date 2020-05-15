@@ -5,4 +5,8 @@
     <color name="colorAccent">#303030</color>
     <color name="mainColor">#303030</color>
     <color name="titleColor">#FFF</color>
+
+
+    <color name="black">#BB000000</color>
+    <color name="white">#FFFFFF</color>
 </resources>

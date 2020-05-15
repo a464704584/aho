@@ -8,7 +8,7 @@ package com.cy.aho.common.widgets.retrofit;
  */
 
 public class APIConst {
-    public static final String BASE_URL="http://192.168.1.76:8082/";
+    public static final String BASE_URL="http://192.168.1.77:8082/";
     //linux
 //    public static final String BASE_URL="http://180.76.99.222:8080/";
 }

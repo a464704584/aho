@@ -10,10 +10,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import butterknife.Unbinder;
+
 public class BaseFragment extends Fragment {
     protected final String TAG = getClass().getSimpleName();
 
     protected View rootView;
+
+    protected Unbinder unbinder;
 
     @Override
     public void onAttach(@NonNull Context context) {
@@ -57,7 +61,11 @@ public class BaseFragment extends Fragment {
         Log.i(TAG,"hidden "+hidden);
     }
 
-    protected <T extends View> T fd(@IdRes Integer id) {
-        return rootView.findViewById(id);
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (unbinder!=null){
+            unbinder.unbind();
+        }
     }
 }

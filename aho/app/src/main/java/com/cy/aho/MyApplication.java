@@ -8,11 +8,18 @@ import android.app.Application;
  * @描述
  */
 public class MyApplication extends Application {
+    private static MyApplication application;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        application=this;
+    }
 
 
-
-
-
+    public static MyApplication getInstance(){
+        return application;
+    }
 
     public synchronized static String getToken(){
         return "";

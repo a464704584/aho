@@ -1,5 +1,6 @@
 package com.cy.aho.common.widgets.retrofit;
 
+import com.cy.aho.bean.Knowledge;
 import com.cy.aho.bean.KnowledgeType;
 import com.cy.aho.common.bean.BaseResponse;
 
@@ -16,6 +17,10 @@ import retrofit2.http.Query;
  */
 public interface API {
 
-    @GET("k/st")
+    @GET("k/skt")
     Observable<BaseResponse<List<KnowledgeType>>> listKnowledgeType(@Query("parentId")String parentId);
+
+
+    @GET("k/sk")
+    Observable<BaseResponse<List<Knowledge>>> listKnowledgeByType(@Query("typeId")String typeId);
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_wallpaper"
+        android:icon="@drawable/ic_main_page_black_24dp"
+        android:title="aaa" />
+    <item
+        android:id="@+id/main_music"
+        android:icon="@drawable/ic_main_page_black_24dp"
+        android:title="bbb" />
+    <item
+        android:id="@+id/main_my"
+        android:icon="@drawable/ic_main_page_black_24dp"
+        android:title="ccc" />
+</menu>
